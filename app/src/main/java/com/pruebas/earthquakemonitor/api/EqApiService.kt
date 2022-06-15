@@ -1,8 +1,7 @@
-package com.pruebas.earthquakemonitor
+package com.pruebas.earthquakemonitor.api
 
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
-import retrofit2.converter.scalars.ScalarsConverterFactory
 import retrofit2.http.GET
 
 
@@ -13,7 +12,7 @@ interface EqApiService {
 }
 */
 interface EqApiService {
-    @GET("all_hour.geojson")//all_day.geojson
+    @GET("all_hour.geojson")
     suspend fun getLastHourEarthquakes(): EqJsonResponse
 }
 

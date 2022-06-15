@@ -1,19 +1,21 @@
-package com.pruebas.earthquakemonitor
+package com.pruebas.earthquakemonitor.main
 
 import android.content.Context
 import android.util.Log
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import com.pruebas.earthquakemonitor.Earthquake
+import com.pruebas.earthquakemonitor.R
 import com.pruebas.earthquakemonitor.databinding.EqListItemBinding
 
 private val TAG = EqAdapter::class.java.simpleName
 
-class EqAdapter(private val context: Context): ListAdapter<Earthquake, EqAdapter.EqViewHolder>(DiffCallback) {
+class EqAdapter(private val context: Context): ListAdapter<Earthquake, EqAdapter.EqViewHolder>(
+    DiffCallback
+) {
 
     companion object DiffCallback: DiffUtil.ItemCallback<Earthquake>() {
         override fun areItemsTheSame(oldItem: Earthquake, newItem: Earthquake): Boolean {

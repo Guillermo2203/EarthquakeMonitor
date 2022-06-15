@@ -38,5 +38,6 @@
             android:textSize="20sp"
             android:textColor="@color/text_black"
             tools:text="80 kilometros E NY" />
+
     </RelativeLayout>
 </layout>

@@ -1,3 +1,3 @@
-package com.pruebas.earthquakemonitor
+package com.pruebas.earthquakemonitor.api
 
 class EqJsonResponse(val features: List<Feature>)
